@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cors-anywhere
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+    instances: 1
+    region: oregon
